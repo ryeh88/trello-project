@@ -3,7 +3,7 @@ var ReactDOM = require('react-dom');
 
 var Cards = function (){
     return (
-        <li className="card">{List.props.inputVal}</li>
+        <li className="card"></li>
     )
 }
 
@@ -18,7 +18,7 @@ var List = React.createClass({
         if (this.state.editing) {
             var inputVal = this.refs.newItem.value;
         }
-        return (<li>inputVal</li>)
+        return inputVal
     },
     renderNormal: function () {
         var {className, color, listName} = this.props;

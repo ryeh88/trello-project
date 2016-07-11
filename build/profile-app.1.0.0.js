@@ -50,11 +50,7 @@
 	var ReactDOM = __webpack_require__(33);
 	
 	var Cards = function Cards() {
-	    return React.createElement(
-	        'li',
-	        { className: 'card' },
-	        List.props.inputVal
-	    );
+	    return React.createElement('li', { className: 'card' });
 	};
 	
 	var List = React.createClass({
@@ -71,11 +67,7 @@
 	        if (this.state.editing) {
 	            var inputVal = this.refs.newItem.value;
 	        }
-	        return React.createElement(
-	            'li',
-	            null,
-	            'inputVal'
-	        );
+	        return inputVal;
 	    },
 	    renderNormal: function renderNormal() {
 	        var _props = this.props;
